@@ -1,6 +1,7 @@
 import React from 'react';
 import Sidebar from './Sidebar';
 import MainChat from './MainChat';
+import GptSheet from './Sheet';
 
 const ChatInterface = () => {
   return (
