@@ -29,9 +29,8 @@ const MainChat = () => {
   }
 
   return (
-    <div className='flex shadow-sm rounded-2xl border border-border'>
-      <div className="flex-1 flex flex-col bg-white relative" onMouseUp={handleMouseUp}>
-        <img src={"./chat-bg.png"} className='absolute bottom-0 left-0 right-0' />
+    <div className='flex flex-1 shadow-sm rounded-2xl border border-border'>
+      <div className="flex-1 flex flex-col bg-white relative" style={{ backgroundImage: "url(./bg-chat.png)", backgroundRepeat: "no-repeat", backgroundSize: "cover" }} onMouseUp={handleMouseUp}>
         {/* Header */}
         <header className="border-b p-4 flex items-center justify-between">
           <div className="flex items-center gap-2">
@@ -118,7 +117,7 @@ const MainChat = () => {
         </div>
 
         {/* Input Area */}
-        <div className="border-t p-4">
+        <div className="border rounded bg-white p-4 m-4">
           <div className="relative">
             <input
               type="text"
