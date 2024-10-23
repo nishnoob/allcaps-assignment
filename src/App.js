@@ -1,6 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
-import ChatInterface from './screens/Chat';
+import ChatInterface from './components/Chat';
 
 function App() {
   return (
